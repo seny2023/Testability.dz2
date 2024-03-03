@@ -1,11 +1,9 @@
-
-    public class Main {
-        public static void main(String[] args) {
-            BmiService service = new BmiService();
-            double weight = 98;
-            double height = 1.87;
-            double index = service.calculate(weight, height);
-            System.out.println("Индекс массы тела: " + Math.round(index * 100) / 100D);
-        }
+public class Main {
+    public static void main(String[] args) {
+        BmiService service = new BmiService();
+        double heightMeter = 1.87;                                              /* рост в сантиметрах */
+        int weightKilo = 98;                                              /* вес в килограммах */
+        int index = service.calculate(heightMeter, weightKilo);
+        System.out.println("Индекс массы тела: " + index );
     }
-
+}
